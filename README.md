@@ -8,4 +8,11 @@ Weitere bekannte Auszeichnungssprachen sind:
 - Extensible Markup Language (XML)
 - Yet Another Markup Language (YAML)
 
-# Installation von NodeJS
+## Installation von NodeJS
+
+Javascript läuft unter normalen Umständen in einer Browsser-Sandbox (nur im Browser, wichtig für Sicherheit).
+Seit ca. 2010 gibt es eine Laufzeitumgebung (_Runtime Environment_) für Javascript, damit auch serverseitig JS programmieren und ausführen kann: [Node.js](https://nodejs.org/en/)
+
+## Installation von pnpm
+
+Der standmäßige _Paket Manager_ für Node, ist 'npm' (_node package manager_).
