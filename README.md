@@ -33,6 +33,20 @@ Installation mit dem Skript ´pnpm create strapi´. Daraufhin führt das CLI dur
 1. wechsel in das Inhaltsverzeichnis (mit "cd strapi")
 2. Neuerlicher Versuch mit "pnpm install" (oder "npm install") Dieser scheitert in der Regel. Build-Skripte müssen mit "pnpm.approve build" manuell freigegeben werden.
 
+### In der package.json Datei steht alles was in die node_modules installiert wird. Ohne package.json kann man keine node_modules installieren. Wenn es nicht vorhanden ist funktioniert Strapi nicht.
+
+---
+
+# Historische Entwicklung von WebDev
+
+Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen durchlaufen:
+
+1. Statische Webseiten (HTML, CSS, ggr. JavaScript) - initiale Phase des Webdevelopments, bei der Inhalte fest im HTML-Code verankert sind. Dominant in der 1990er Jahren.
+
+2. Dynamische Webseiten (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenanbindung. Dominant in den 2000er Jahren.)
+
+3. _Single-Page Applications_ (SPA) - mit JavaScript-Frameworks erstellt "Wepapps", die ähnliche Funktionen wie klassische Desptop-Anwenundngen bzw. Handy_apps bieten. Dominant in der 2010er Jahren.
+
 ## VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
 VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent View. Dort können alle Anpassungen des "_Coding Harness_" vorgenommen werden. Wir können unseren _Harness_ mit verschiedenen Methoden anpassen:
