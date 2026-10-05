@@ -33,3 +33,9 @@ Installation mit dem Skript ´pnpm create strapi´. Daraufhin führt das CLI dur
 1. wechsel in das Inhaltsverzeichnis (mit "cd strapi")
 2. Neuerlicher Versuch mit "pnpm install" (oder "npm install") Dieser scheitert in der Regel. Build-Skripte müssen mit "pnpm.approve build" manuell freigegeben werden.
 
+## VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
+
+VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent View. Dort können alle Anpassungen des "_Coding Harness_" vorgenommen werden. Wir können unseren _Harness_ mit verschiedenen Methoden anpassen:
+
+-**MCP-Server**:
+MCP steht für _Model COntext Protocol_. Es ist ein Standard, der von Anthropic entwickelt wurde. Mit Hilfe von MCP können Chatbots/LLMs auf zustzliche Tools zugreifenm, die sie zu Experten in einem bestimmten Bereich machen.
