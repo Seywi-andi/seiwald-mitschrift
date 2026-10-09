@@ -45,7 +45,27 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 
 2. Dynamische Webseiten (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenanbindung. Dominant in den 2000er Jahren.)
 
-3. _Single-Page Applications_ (SPA) - mit JavaScript-Frameworks erstellt "Wepapps", die ähnliche Funktionen wie klassische Desptop-Anwenundngen bzw. Handy_apps bieten. Dominant in der 2010er Jahren.
+3. _Single-Page Applications_ (SPA) - mit JavaScript-Frameworks (z.B. React, Angular, Vue, Svelte,...) erstellt "Wepapps", die ähnliche Funktionen wie klassische Desptop-Anwenundngen bzw. Handy-apps bieten. Dominant in der 2010er Jahren. Um Handy-Apps möglich nahe zu kommen, wurde der _Progressive Web APP_ (PWA) Standard entwickelt. Damit können Webapps offline funktionieren, Pushbenachrichtigungen senden und auf bestimmmte native Funktionen des Geräts zugreifen:
+
+- Pushbenachrichtungen
+- Kamera
+- GPS
+- Mikrofon
+- Kontakte
+- Bluetooth
+
+Es gibt drei Voraussetzungen, die eine WebApp erfüllen muss, um als PWA zu gelten:
+
+1. Sie muss über ein Manifest (manfiest.json) verfügen, das die App als solche kennzeichnet.
+2. Sie muss über ein Service Worker verfügen, der die App offlinefähig macht. Ein Service Worker ist eine JS-Datei, die im Hintergrund des Browsers läuft - selbst wenn der Browser geschlossen ist.
+3. Sie muss über HTTPS ausgeliefert werden, um die Sicherheit der Daten zu gewährleisten.
+
+## Interpreted language vs. compiled language
+
+Der Unterschied zwischen _interpretierten_ und _kompilierten_ Programmiersprachen liegt in der Art und Weise, wie der Code ausgeführt wird:
+Compiled languages (z.B. C, C++, Rust, Go) werden vor der Ausführung in Maschinencode übersetzt. Dieser Maschinencode kann direkt von der CPU ausgeführt werden, was in der Regel zu einer höheren Ausführungsgeschwindigkeit führt.
+
+Interpreted Langauges - Scriptsprachen (z.B. Python, JavaScript, Ruby) werden zur Laufzeit interpretiert. Der Quellcode wird Zeile für Zeile gelesen und ausgeführt, was die Entwicklung und das Debugging erleichtert, aber oft zu einer geringeren Ausführungsgeschwindigkeit führt.
 
 ## VibeCoding / AgenticEngineering mit VS-Code und GitHub Copilot
 
@@ -53,3 +73,5 @@ VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent 
 
 -**MCP-Server**:
 MCP steht für _Model COntext Protocol_. Es ist ein Standard, der von Anthropic entwickelt wurde. Mit Hilfe von MCP können Chatbots/LLMs auf zustzliche Tools zugreifenm, die sie zu Experten in einem bestimmten Bereich machen.
+
+uBlock Origin
