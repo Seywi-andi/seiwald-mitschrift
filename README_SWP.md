@@ -194,3 +194,46 @@ In Svelte können wir trotz unterschiedlicher Datentypen einfach die Felder mite
 
 <button disabled="{!yes}">Subscribe</button>
 ```
+
+## Stack
+
+### Datenstruktur (last in first out) - UFO
+
+gegenteil wäre fifo (first in first out) - Queue
+
+### Server Stack/Software Stack
+
+einfachste Unterteilung  
+Frontend -- API (Application Programming Interface) (REST --> Crud) -- Backend  
+Create --> Post  
+Read --> Get  
+Update --> Put/Patch  
+Delete --> Delete
+
+### Bereich im RAM-Speicher einer Anwendung
+
+es gibt einen dynamically allocated speicher am ram dieser wird von Heap und Stack verwendet, wenn der Stack zu viel braucht und den
+Heap überschreibt reden wir von einem Stack-Overflow.
+
+---
+
+# Frontend-Entwicklung
+
+## Ordnerstruktur
+
+Die Ordnerstruktur einer typischen Forntend-Anwendung sieht in etwa so aus.
+![Ordnerstruktur einer Svelte-Anwendung](image.png)
+
+Der Ornder '.vsCode' enthält alle Einstellungen für den VS-Code-Editor.
+
+Der Ordner 'node*modules' enthält die Abhängigkeit (\_dependecies*) der Anwendung. DAs sidn jene Pakete, die bei der Entwicklung (_build time_) und/oder bei der Ausführung (_runtime_) der Anwendung benötigt werden. Alle Abhängigkeiten sind in der Datei 'package.json' aufgelistet. Ausßerdem enthält sie Informationen über die Anwendungen selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisiert (z.B. Starten der Answendung, Testen der Anwendung, Ersteller einer Produktionsversion der Anwendung)
+
+Der Ordner 'public' enthält statische Dateien (z.B. Bilder, Fonts, Icons), die direkt vom Browser unter dem jeweiligen Pfad geladen werden kann.
+
+Der Ordner 'src' enthält den Quellcode der Anwendung. Die Dateien 'app.css', 'App.svelte' und 'main.js' sind die Einstiegspunkte der Anwendung (in diesem Fall eine SPA). Sie werden von Browser als erstes geladen, wenn die entsprechenden Website aufgerufen wird. Die Datei 'App.svelte' ist die Jauptkomponenten der Anwendung, die andere Komponenten importiert und in der Benutzeroberfläche angezeigt. Die Datei 'main.ts' ist der Einteigspunkt für das JavaScript/TypeScript der Anwendung. Sie initalieriert die Anwendung in der 'App.svelte' und bindet sie an das HTML-Dokument ('index.html' im Root-Ordner).
+
+Der Ordner 'lib' enthält benutzerdefinierte Bibliotheken und Hilfsfunktionen, die in der Anwendung verwendet werden.
+
+Der Ordner 'components' enthält die wiederverwendbaren Komponenten der Anwendung. Sie sind die Bausteine der Benutzeroberfläche.
+
+Der Ordner 'game' enthält die Logik für das Spiel. Die Datei 'store.svelte.ts' enthäkt den Zustand (_state_) der Anwendung. D.h. sie speichert alle Daten die sich im Laufe der Zeit ändern können. (z.B. Spielstand, Spielergebnisse, Einstellungen, usw.) und fungiert als zentrale Datenquelle - _single Source of Truth_. (für mehr Details zum Speichermanagment im Frontend siehe Road-to-IT-Matura Team im Kanal "SWP - 06 - Softwareentwicklung")

@@ -46,7 +46,7 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 2. Dynamische Webseiten (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenanbindung. Dominant in den 2000er Jahren.)  
    --> wichtigstes Feature: Datenbanken
 
-3. _Single-Page Applications_ (SPA) - mit JavaScript-Frameworks (z.B. React, Angular, Vue, Svelte,...) erstellt "Wepapps", die ähnliche Funktionen wie klassische Desptop-Anwenundngen bzw. Handy-apps bieten. Dominant in der 2010er Jahren. Um Handy-Apps möglich nahe zu kommen, wurde der _Progressive Web APP_ (PWA) Standard entwickelt. Damit können Webapps offline funktionieren, Pushbenachrichtigungen senden und auf bestimmmte native Funktionen des Geräts zugreifen:
+3. _Single-Page Applications_ (SPA) (leeres HTML Skelett) - mit JavaScript-Frameworks (z.B. React, Angular, Vue, Svelte,...) erstellt "Wepapps", die ähnliche Funktionen wie klassische Desptop-Anwenundngen bzw. Handy-apps bieten. Dominant in der 2010er Jahren. Um Handy-Apps möglich nahe zu kommen, wurde der _Progressive Web APP_ (PWA) Standard entwickelt. Damit können Webapps offline funktionieren, Pushbenachrichtigungen senden und auf bestimmmte native Funktionen des Geräts zugreifen:
 
 - Pushbenachrichtungen
 - Kamera
@@ -71,6 +71,7 @@ Frontend-Frameworks wenden folgende Architekturprinzipien an, um einen möglichs
 - _Logikbausteiner_ (Schleifen zur Darstellung von Listen und Bedingungen für das konditionale Ein- und Ausblenden von UI-Elementen) werden in den Templates (HTML) definiert, nicht im JS-Code. Das erleichtert die Trennung von Logik und Darstellung. Die Templates werden vom Framework ind die eingentlich UI übersetzt.
 
 - Komponenten können auch andere Komponenten enthalten (verschachtelt werden), wodurch eine hierachische Sturktur entsteht. Die Kommunikation zwischen Komponentne erfolgt über **props** (Eigenschaften) und **Events** (Ereignisse), Props sind Daten, die von einer übergeordneten Komponente an eine untergeordnete weitergeben werden, Events sind Benachrichtigungen, die von einer untergeordenten Komponente an eine übergeordnete Komponente gesednet werden, um auf Benutzerinteraktionen oder andere Ereignisse zu reagieren.
+
 ## Interpreted language vs. compiled language
 
 Der Unterschied zwischen _interpretierten_ und _kompilierten_ Programmiersprachen liegt in der Art und Weise, wie der Code ausgeführt wird:
@@ -84,5 +85,11 @@ VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent 
 
 -**MCP-Server**:
 MCP steht für _Model COntext Protocol_. Es ist ein Standard, der von Anthropic entwickelt wurde. Mit Hilfe von MCP können Chatbots/LLMs auf zustzliche Tools zugreifenm, die sie zu Experten in einem bestimmten Bereich machen.
+
+package.json ist die wichtigste Datei - da steht drinnen welche Befehle man in der Comandozelle aufsühren kann
+
+### Ein Subset ist eine untermenge von etwas
+
+Daher jeder JS ist TS aber nicht jeder TS ist JS
 
 uBlock Origin
