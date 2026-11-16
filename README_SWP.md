@@ -237,3 +237,8 @@ Der Ordner 'lib' enthält benutzerdefinierte Bibliotheken und Hilfsfunktionen, d
 Der Ordner 'components' enthält die wiederverwendbaren Komponenten der Anwendung. Sie sind die Bausteine der Benutzeroberfläche.
 
 Der Ordner 'game' enthält die Logik für das Spiel. Die Datei 'store.svelte.ts' enthäkt den Zustand (_state_) der Anwendung. D.h. sie speichert alle Daten die sich im Laufe der Zeit ändern können. (z.B. Spielstand, Spielergebnisse, Einstellungen, usw.) und fungiert als zentrale Datenquelle - _single Source of Truth_. (für mehr Details zum Speichermanagment im Frontend siehe Road-to-IT-Matura Team im Kanal "SWP - 06 - Softwareentwicklung")
+
+## Teile des Backends
+- Datenpersistenz
+- Authentifizierung + Autorisierung
+- Geschäftslogik
